@@ -31,5 +31,6 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ann-artist&show_icons=true&locale=en" alt="ann-artist" /></p>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ann-artist&show_icons=true&locale=en&layout=compact" alt="ann-artist" /></p>
+<br>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ann-artist&" alt="ann-artist" /></p>
