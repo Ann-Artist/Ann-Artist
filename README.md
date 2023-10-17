@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on **Portfolio Website**
 
-- 🌱 I’m currently learning **Prompt Engineering, Data Structures, Databases management system,**
+- 🌱 I’m currently learning **Generative AI, Prompt Engineering...**
 
 - 👀 I’m interested in **Art, Tech and AI**
 
