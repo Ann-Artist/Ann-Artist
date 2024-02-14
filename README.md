@@ -11,11 +11,7 @@
 
 - 👀 I’m interested in **Art, Tech and AI**
 
-- 💫 I'm excited to learn **Flutter, Dart, Arduino**
-
 - 👨‍💻 All of my projects are available at [coming soon]
-
-- 📝 I regularly write articles on [https://www.poly.kkwagh.edu.in/cm_econtents_brain.php](https://www.poly.kkwagh.edu.in/cm_econtents_brain.php)
 
 - 💬 Ask me about **HTML, CSS, BOOTSTRAP**
 
