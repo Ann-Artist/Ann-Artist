@@ -1,6 +1,5 @@
 <div align="center"><img src="https://raw.githubusercontent.com/ann-artist/ann-artist/main/githubbanner.png"></div>
-<h1 align="center">Hi, I'm Anusha (Ann) 👋</h1>
-<h3 align="center">🎓 A Computer Technology Diploma Graduate (2025)</h3>
+<h1 align="center">Hello! I'm Anusha (Ann) 👋</h1>
 <img align="right" alt="Coding" width="300" src="https://media.tenor.com/7LAB1WbMURAAAAAd/website.gif">
 
 <p align="left">
