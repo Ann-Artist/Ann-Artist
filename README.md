@@ -9,6 +9,8 @@
 
 <h3 align="left">💻 About Me:</h3>
 
+- 🎓 A Computer Technology Diploma Graduate (2025)
+
 - 🏆 Best Outgoing Student – K. K. Wagh Polytechnic, Nashik
   
 - 🏅 National & State Level Tech Competition Winner
