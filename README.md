@@ -1,7 +1,6 @@
 <div align="center"><img src="https://raw.githubusercontent.com/ann-artist/ann-artist/main/banner.png"></div>
 
 <h1 align="center">Hello! I'm Anusha (Ann) 👋</h1
-                                              
 <img align="right" alt="Coding" width="300" src="https://media.tenor.com/7LAB1WbMURAAAAAd/website.gif">
 
 <p align="left">
