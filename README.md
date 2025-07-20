@@ -1,4 +1,4 @@
-<div align="center"><img src="https://raw.githubusercontent.com/ann-artist/ann-artist/main/githubbanner.png"></div>
+<div align="center"><img src="https://raw.githubusercontent.com/ann-artist/ann-artist/main/banner.png"></div>
 
 <h1 align="center">Hello! I'm Anusha (Ann) 👋</h1
                                               
