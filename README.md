@@ -39,9 +39,9 @@
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=ann-artist&show_icons=true&theme=tokyonight" alt="GitHub Stats"/>
-  <br>
+  <br><br>
   <img src="https://github-readme-streak-stats.herokuapp.com?user=ann-artist&theme=tokyonight" alt="GitHub Streak"/>
-  <br>
+  <br><br>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ann-artist&layout=compact&theme=tokyonight" alt="Top Languages"/>
 </p>
 
