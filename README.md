@@ -1,45 +1,120 @@
-<div align="center"><img src="https://raw.githubusercontent.com/ann-artist/ann-artist/main/githubbanner.gif"></div>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ann-artist/ann-artist/main/githubbanner.gif" width="100%" alt="GitHub Banner">
+</div>
 
 <h1 align="center">Hello! I'm Anusha (Ann) 👋</h1>
-<img align="right" alt="Coding" width="300" src="https://media.tenor.com/7LAB1WbMURAAAAAd/website.gif">
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=ann-artist&label=Profile%20views&color=8F00FF&style=flat" alt="ann-artist" />
-</p>
+<img align="right" alt="Coding" width="300" src="https://media.tenor.com/7LAB1WbMURAAAAAd/website.gif">
 
 <h3 align="left">💻 About Me:</h3>
 
-- 🎓 A Computer Technology Diploma Graduate (2025)
-
-- 🏆 Best Outgoing Student – K. K. Wagh Polytechnic, Nashik
-  
-- 🏅 National & State Level Tech Competition Winner
-  
-- 💻 Python | Machine Learning | Data Science
-  
+- 🎓 Third-year B.E. Computer Engineering student at JSCOE, Pune
+- 🏆 Best Outgoing Student – K. K. Wagh Polytechnic, Nashik (2025)
+- 🚀 Top 20 among 1,000+ participants at NexBuildOn Hack 2026
+- 🏅 Hackathon Grand Finale – Top 10 Live Demo Selection
+- 🌱 Exploring Artificial Intelligence, Machine Learning & Data Science
+- 💻 Interested in Python, AI/ML, Web Development & building real-world solutions
 - 🎨 Artist at heart – bringing creativity to code, design, and user experience
-  
-- 🌱 Constantly learning, building, and exploring meaningful tech
+- 🤝 Love collaborating, participating in hackathons, and learning new technologies
+
+<br clear="right">
+
+<h3 align="left">🚀 Featured Project:</h3>
+
+**🌿 EcoQuest – Gamified Personal Carbon Footprint**
+
+A sustainability-focused web application that encourages eco-friendly habits through gamification, personalized recommendations, XP, achievements, and leaderboards.
+
+- 🌍 Makes everyday environmental impact easier to understand
+- 🎯 Encourages sustainable habits through challenges and rewards
+- 🏆 Recognized with Best Potential for Impact at NexBuildOn Hack 2026
+
+**Tech Stack:** React · Vite · Node.js · Express · SQLite
 
 <br>
 
 <h3 align="left">📬 Connect with me:</h3>
+
 <p align="left">
-<a href="https://linkedin.com/in/anusha-randive-1b1a24292/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="anusha-randive-1b1a24292/" height="30" width="40" /></a>
+  <a href="https://linkedin.com/in/anusha-randive-1b1a24292/" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linkedin" width="40" height="40" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/ann-artist" target="_blank">
+    <img src="https://skillicons.dev/icons?i=github" width="40" height="40" alt="GitHub">
+  </a>
 </p>
 
 <br>
 
 <h3 align="left">🛠️ Tech Stack:</h3>
 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white) ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=for-the-badge&logo=Adobe%20Acrobat%20Reader&logoColor=white) ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white) ![Dribbble](https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+<h4 align="left">💻 Programming Languages</h4>
 
-[![](https://visitcount.itsvg.in/api?id=Ann-Artist&icon=10&color=12)](https://visitcount.itsvg.in)
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,java,cpp,c,javascript,html,css&theme=dark" alt="Programming Languages">
+</p>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<h4 align="left">🌐 Web Development</h4>
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,bootstrap,vite&theme=dark" alt="Web Development">
+</p>
+
+<h4 align="left">🤖 AI, Machine Learning & Data Science</h4>
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=sklearn,pytorch,tensorflow&theme=dark" alt="Machine Learning">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=matplotlib&logoColor=black" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/XGBoost-EC6B23?style=for-the-badge&logoColor=white" alt="XGBoost">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
+</p>
+
+<h4 align="left">🔌 IoT & Hardware</h4>
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=arduino&theme=dark" alt="Arduino">
+  <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32">
+</p>
+
+<h4 align="left">⚙️ Tools & Platforms</h4>
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,anaconda,vercel,figma&theme=dark" alt="Tools and Platforms">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab">
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
+  <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" alt="Canva">
+</p>
+
 <br>
 
+<h3 align="left">🏆 Achievements & Experience:</h3>
+
+- 🥇 **Best Outgoing Student 2025** – K. K. Wagh Polytechnic, Nashik
+- 🚀 **NexBuildOn Hack 2026** – Top 20 among 1,000+ participants
+- 🎤 **Grand Finale Selection** – Top 10 Live Demo
+- 🌱 **Best Potential for Impact** – NexBuildOn Hack 2026
+- 📄 **Research Publication** – Smart Security System for Bike with Biometric Access and Mobile Application
+- 💼 **R3 Systems Internship** – NYC Taxi Fare Prediction using Python and XGBoost
+
 <br>
+
+<h3 align="left">📊 GitHub Statistics:</h3>
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=500&color=F18A2A&center=true&vCenter=true&width=435&lines=Keep+creating!+Keep+coding!+%F0%9F%8E%A8%F0%9F%92%BB" alt="Keep creating! Keep coding!" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=ann-artist&show_icons=true&theme=transparent&hide_border=true&rank_icon=github&title_color=C43D4B&icon_color=A83240&text_color=C9D1D9" alt="GitHub Statistics">
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ann-artist&layout=compact&theme=transparent&hide_border=true&langs_count=8&title_color=C43D4B&text_color=C9D1D9" alt="Most Used Languages">
+</p>
+
+<p align="center">
+  <img width="70%" src="https://streak-stats.demolab.com?user=ann-artist&theme=dark&hide_border=true&background=0D1117&ring=C43D4B&fire=A83240&currStreakLabel=C43D4B&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" alt="GitHub Contribution Streak">
+</p>
+
+<br>
+
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=500&color=C43D4B&center=true&vCenter=true&width=435&lines=Keep+creating!+Keep+coding!+%F0%9F%8E%A8%F0%9F%92%BB" alt="Keep creating! Keep coding!">
 </p>
