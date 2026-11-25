@@ -4,6 +4,10 @@
 
 <h1 align="center">Hello! I'm Anusha (Ann) 👋</h1>
 
+<p align="center">
+  <img src="assets/collector-profile.svg" width="100%" alt="Ann-Artist collector profile">
+</p>
+
 <img align="right" alt="Coding" width="300" src="https://media.tenor.com/7LAB1WbMURAAAAAd/website.gif">
 
 <h3 align="left">💻 About Me:</h3>
@@ -113,7 +117,6 @@ A sustainability-focused web application that encourages eco-friendly habits thr
 </p>
 
 <br>
-
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=500&color=C43D4B&center=true&vCenter=true&width=435&lines=Keep+creating!+Keep+coding!+%F0%9F%8E%A8%F0%9F%92%BB" alt="Keep creating! Keep coding!">
