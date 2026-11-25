@@ -20,22 +20,6 @@ def graphql(q):
     with req("https://api.github.com/graphql", json.dumps({"query": q}).encode()) as r: return json.load(r)["data"]["user"]
 
 
-# ---------------- themed section headers ----------------
-SECTIONS = {"about": "ABOUT ME", "featured": "FEATURED PROJECT", "connect": "CONNECT WITH ME", "stack": "TECH STACK",
-            "achievements": "ACHIEVEMENTS & EXPERIENCE", "stats": "GITHUB STATISTICS"}
-os.makedirs("assets", exist_ok=True)
-for key, title in SECTIONS.items():
-    open(f"assets/header-{key}.svg", "w", encoding="utf-8").write(f'''<svg xmlns="http://www.w3.org/2000/svg" width="800" height="48" viewBox="0 0 800 48" role="img" aria-label="{html.escape(title, quote=False)}">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset=".5" stop-color="#3de0e0"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
-<linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<clipPath id="c"><rect x="1" y="1" width="798" height="46" rx="11"/></clipPath></defs>
-<rect x="1" y="1" width="798" height="46" rx="11" fill="#0a0a14" stroke="url(#g)" stroke-width="1.6"/>
-<rect x="16" y="14" width="5" height="20" rx="2.5" fill="url(#g)"/>
-<text x="34" y="30" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="3" fill="#3de0e0">{html.escape(title, quote=False)}</text>
-<g clip-path="url(#c)"><rect x="-120" y="0" width="100" height="48" fill="url(#s)" transform="skewX(-20)"><animate attributeName="x" values="-120;860;860" keyTimes="0;.5;1" dur="6s" repeatCount="indefinite"/></rect></g>
-<circle cx="780" cy="24" r="4" fill="#4dffa0"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
-</svg>''')
-
 # ---------------- fetch ----------------
 user = api(f"/users/{USER}")
 repos, page = [], 1
