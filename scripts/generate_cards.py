@@ -8,7 +8,7 @@ TOKEN = os.environ.get("GITHUB_TOKEN")
 COLORS = {"TypeScript":"#3178c6","JavaScript":"#f0db4f","HTML":"#e34c26","PHP":"#4f5b93","CSS":"#a97bc4","Python":"#3776ab",
           "Java":"#e76f00","C++":"#00599c","C":"#6e7681","Jupyter Notebook":"#da5b0b","Shell":"#89e051"}
 col = lambda n: COLORS.get(n, "#8a8aa6")
-esc = lambda s: html.escape(str(s or ""), quote=False)
+esc = lambda s: html.escape("" if s is None else str(s), quote=False)
 
 def req(url, data=None):
     r = urllib.request.Request(url, data=data, headers={"User-Agent": "card-gen", "Accept": "application/vnd.github+json"})
@@ -18,6 +18,23 @@ def api(path):
     with req("https://api.github.com" + path) as r: return json.load(r)
 def graphql(q):
     with req("https://api.github.com/graphql", json.dumps({"query": q}).encode()) as r: return json.load(r)["data"]["user"]
+
+
+# ---------------- themed section headers ----------------
+SECTIONS = {"about": "ABOUT ME", "featured": "FEATURED PROJECT", "connect": "CONNECT WITH ME", "stack": "TECH STACK",
+            "achievements": "ACHIEVEMENTS & EXPERIENCE", "stats": "GITHUB STATISTICS"}
+os.makedirs("assets", exist_ok=True)
+for key, title in SECTIONS.items():
+    open(f"assets/header-{key}.svg", "w", encoding="utf-8").write(f'''<svg xmlns="http://www.w3.org/2000/svg" width="800" height="48" viewBox="0 0 800 48" role="img" aria-label="{html.escape(title, quote=False)}">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset=".5" stop-color="#3de0e0"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="c"><rect x="1" y="1" width="798" height="46" rx="11"/></clipPath></defs>
+<rect x="1" y="1" width="798" height="46" rx="11" fill="#0a0a14" stroke="url(#g)" stroke-width="1.6"/>
+<rect x="16" y="14" width="5" height="20" rx="2.5" fill="url(#g)"/>
+<text x="34" y="30" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="3" fill="#3de0e0">{html.escape(title, quote=False)}</text>
+<g clip-path="url(#c)"><rect x="-120" y="0" width="100" height="48" fill="url(#s)" transform="skewX(-20)"><animate attributeName="x" values="-120;860;860" keyTimes="0;.5;1" dur="6s" repeatCount="indefinite"/></rect></g>
+<circle cx="780" cy="24" r="4" fill="#4dffa0"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
+</svg>''')
 
 # ---------------- fetch ----------------
 user = api(f"/users/{USER}")
@@ -91,10 +108,11 @@ rows = "".join(f'<rect x="14" y="{170+i*20}" width="12" height="12" rx="2" fill=
 art = (f'<image xlink:href="{avatar}" x="14" y="36" width="162" height="104" preserveAspectRatio="xMidYMid slice" clip-path="url(#cc)" opacity=".85"/>' if avatar
        else f'<text x="95" y="108" font-size="56" font-weight="800" text-anchor="middle" style="fill:#3de0e0;opacity:.55">{esc(name[0])}</text>')
 out.append(f'''<rect width="{W}" height="290" rx="18" fill="#05050a"/>
-<g transform="translate(40 24) rotate(-2 90 120)"><rect width="190" height="244" rx="14" fill="url(#holo)"/><rect x="3" y="3" width="184" height="238" rx="12" fill="#080810"/>
+<g transform="translate(40 24)"><animateTransform attributeName="transform" type="translate" values="40 24;40 17;40 24" keyTimes="0;.5;1" dur="4.5s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/><g transform="rotate(-2 95 122)"><animateTransform attributeName="transform" type="rotate" values="-2.5 95 122;2.5 95 122;-2.5 95 122" keyTimes="0;.5;1" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/><rect x="-6" y="-6" width="202" height="256" rx="18" fill="#3de0e0" opacity=".12"><animate attributeName="opacity" values=".06;.22;.06" dur="3s" repeatCount="indefinite"/></rect><rect width="190" height="244" rx="14" fill="url(#holo)"/><rect x="3" y="3" width="184" height="238" rx="12" fill="#080810"/>
 <text x="14" y="26" font-size="15" font-weight="700">{esc(name)}</text><text x="176" y="25" font-size="9" text-anchor="end" class="m" style="fill:#f5c542">★ {stars}</text>
 <rect x="14" y="36" width="162" height="104" rx="8" fill="url(#art)"/>{art}
-<text x="14" y="158" font-size="7" letter-spacing="1" class="m" style="fill:#6fa8ff">COMMON · {user['public_repos']} REPOS · SINCE {since}</text>{rows}</g>
+<text x="14" y="158" font-size="7" letter-spacing="1" class="m" style="fill:#6fa8ff">COMMON · {user['public_repos']} REPOS · SINCE {since}</text>{rows}<g clip-path="url(#cardshape)"><rect x="-160" y="-40" width="90" height="330" fill="url(#shine)" transform="skewX(-20)"><animate attributeName="x" values="-160;330;330" keyTimes="0;.4;1" dur="4s" repeatCount="indefinite"/></rect></g></g></g>
+<g fill="#fff"><path d="M250 40 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"><animate attributeName="opacity" values="0;1;0" dur="2.6s" repeatCount="indefinite"/></path><path d="M32 250 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"><animate attributeName="opacity" values="0;1;0" dur="3.2s" begin=".8s" repeatCount="indefinite"/></path><path d="M236 236 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"><animate attributeName="opacity" values="0;1;0" dur="2.9s" begin="1.5s" repeatCount="indefinite"/></path></g>
 <text x="272" y="62" class="m lbl">COLLECTOR'S EDITION · {year}</text><text x="272" y="106" font-size="42" font-weight="800">@{esc(USER.lower())}</text>
 <text x="272" y="130" font-size="13" class="mut">{esc(tag)}</text>
 {stat(272,150,stars,'STARS','#4dffa0')}{stat(524,150,user['followers'],'FOLLOWERS','#4dffa0')}
@@ -139,13 +157,13 @@ if weeks:
     wk = weeks[-26:]; mxc = max((c for w in wk for c in w), default=1) or 1
     lvl = lambda c: 0 if c == 0 else min(4, 1 + int(3 * (c - 1) / max(mxc - 1, 1) + .5))
     cl = ["#14142a", "#2a1f6b", "#5b34c9", "#3de0e0", "#4dffa0"]
-    s = panel(0, y, W, 160) + f'<text x="28" y="{y+34}" class="m lbl">SEASON · 26 WEEKS</text>'
+    s = panel(0, y, W, 176) + f'<text x="28" y="{y+34}" class="m lbl">SEASON · 26 WEEKS</text>'
     for wi, w in enumerate(wk):
         for di, c in enumerate(w):
             s += f'<rect x="{28+wi*12}" y="{y+52+di*14}" width="10" height="10" rx="2" fill="{cl[lvl(c)]}"/>'
     for i, (lab, val) in enumerate([("CURRENT STREAK", f"{cur} days"), ("BEST STREAK", f"{best} days"), ("CONTRIBUTIONS THIS YEAR", total_contrib)]):
-        s += f'<text x="440" y="{y+60+i*38}" font-size="8" letter-spacing="2" class="m mut">{lab}</text><text x="440" y="{y+80+i*38}" font-size="20" font-weight="800">{val}</text>'
-    out.append(s); y += 176
+        s += f'<text x="440" y="{y+62+i*36}" font-size="8" letter-spacing="2" class="m mut">{lab}</text><text x="440" y="{y+82+i*36}" font-size="20" font-weight="800">{val}</text>'
+    out.append(s); y += 192
 
 H = y
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(USER)} collector profile">
@@ -153,6 +171,8 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org
 <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"><animate attributeName="stop-color" values="#7c3aed;#3de0e0;#ec4899;#7c3aed" dur="6s" repeatCount="indefinite"/></stop><stop offset=".5" stop-color="#3de0e0"><animate attributeName="stop-color" values="#3de0e0;#4dffa0;#7c3aed;#3de0e0" dur="6s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#ec4899"><animate attributeName="stop-color" values="#ec4899;#7c3aed;#3de0e0;#ec4899" dur="6s" repeatCount="indefinite"/></stop></linearGradient>
 <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset=".5" stop-color="#3de0e0"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
 <linearGradient id="art" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16301f"/><stop offset="1" stop-color="#0b1a2a"/></linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="cardshape"><rect width="190" height="244" rx="14"/></clipPath>
 <clipPath id="cc"><rect x="14" y="36" width="162" height="104" rx="8"/></clipPath>
 <style>text{{font-family:'Segoe UI',system-ui,sans-serif;fill:#f2f2fa}}.m{{font-family:ui-monospace,Menlo,Consolas,monospace}}.lbl{{font-size:9px;letter-spacing:2px;fill:#6fa8ff}}.mut{{fill:#8a8aa6}}</style>
 </defs>
